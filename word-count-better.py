@@ -14,4 +14,4 @@ wordCounts = words.countByValue()
 for word, count in wordCounts.items():
     cleanWord = word.encode('ascii', 'ignore')
     if cleanWord:
-        print(word.encode('utf-8', 'ignore'), count)
+        print(cleanWord.decode(), count)
